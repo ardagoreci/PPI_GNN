@@ -11,7 +11,7 @@ import torch_optimizer as optim
 from torch.optim.lr_scheduler import MultiStepLR, ReduceLROnPlateau
 from metrics import *
 
-device = torch.device("cuda:1") if torch.cuda.is_available() else torch.cuda("cpu")
+device = torch.device("cuda:0") if torch.cuda.is_available() else torch.cuda("cpu")
 
 import torch.nn as nn
 import networkx as nx
